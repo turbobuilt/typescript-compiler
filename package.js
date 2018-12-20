@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'barbatus:typescript-compiler',
+  name: 'turbobuilt:typescript-compiler',
   version: '0.10.0',
   summary: 'TypeScript Compiler for Meteor',
   git: 'https://github.com/barbatus/typescript-compiler',
@@ -16,7 +16,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.4.1');
 
   api.use([
-    'ecmascript@0.10.8',
+    'ecmascript@0.9.0',
     'check@1.0.5',
     'underscore@1.0.4',
   ], 'server');
@@ -46,7 +46,7 @@ Package.onTest(function(api) {
     'meteortesting:mocha',
     'dispatch:mocha-phantomjs',
   ]);
-  api.use('barbatus:typescript-compiler');
+  api.use('turbobuilt:typescript-compiler');
 
   api.addFiles([
     'tests/server/unit/input-file.js',
